@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Renewable_TotalMarketed_LowGrowth, Data
 
-# Register your models here.
+admin.site.register(Renewable_TotalMarketed_LowGrowth)
+admin.site.register(Data)
