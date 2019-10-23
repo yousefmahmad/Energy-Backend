@@ -11,5 +11,5 @@ class Renewable_TotalMarketed_LowGrowth_Serializer(serializers.ModelSerializer):
   data = DataSerializer(many=True)
   class Meta:
     model = Renewable_TotalMarketed_LowGrowth
-    fields = ('name', 'units', 'description', 'updated')
+    fields = ('name', 'units', 'description', 'updated', 'data')
     
