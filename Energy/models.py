@@ -12,5 +12,5 @@ class Renewable_TotalMarketed_LowGrowth (models.Model):
   
 class Data (models.Model):
   year = models.TextField()
-  quads = models.IntegerField()
+  quads = models.DecimalField(max_digits=20, decimal_places=10)
   renewable_totalmarketed_lowgrowth = models.ForeignKey( Renewable_TotalMarketed_LowGrowth, on_delete=models.CASCADE, related_name='data' )
